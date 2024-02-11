@@ -4,3 +4,4 @@
           
             ->In this journey i will start learn by self and explore many things
             ->I starting from the kickstart with the HTML,CSS,JavaScript and yet to explore more.
+                    ->Day 1 - I have Created the Weather app [show the weather based on the city typed]
