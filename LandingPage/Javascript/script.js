@@ -8,7 +8,7 @@ let x = setInterval(function () {
     let minutes = Math.floor((distace % (1000 * 60 * 60)) / (1000 * 60));
     let seconds = Math.floor((distace % (1000 * 60)) / 1000);
 
-    document.getElementById("Days").innerHTML = days;
+    let day = document.getElementById("Days").innerHTML = days;
     document.getElementById("Hours").innerHTML = hours;
     document.getElementById("Mintues").innerHTML = minutes;
     document.getElementById("Seconds").innerHTML = seconds;
