@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), #0b0b0b),
+    url("/ResponsiveNumberCountingAnimation/assets/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 8%;
+}
+
+.container .header {
+  padding: 0 0 60px 0;
+}
+
+.header .title {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 42px;
+  color: #ef7e39;
+}
+
+.header .sub-title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1;
+}
+
+.container .counters {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.counters .counter {
+  width: 250px;
+  background-color: #fff;
+  color: #000;
+  font-weight: 400;
+  padding: 30px 15px;
+  margin: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  transition: all 0.5s;
+}
+
+.counters .counter:hover {
+  box-shadow: rgba(229, 126, 57, 0.8) 0px 2px 8px 0px;
+  transform: translateY(-5px);
+}
+
+.counters .customer {
+  background-image: url(/ResponsiveNumberCountingAnimation/assets/counter_icon01.png);
+}
+
+.counter .projects {
+  background-image: url(/ResponsiveNumberCountingAnimation/assets/counter_icon02.png);
+}
+
+.counter .employee {
+  background-image: url(/ResponsiveNumberCountingAnimation/assets/counter_icon03.png);
+}
+
+.counter .awards {
+  background-image: url(/ResponsiveNumberCountingAnimation/assets/counter_icon04.png);
+}
+
+.counters .counter .number {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.counters .customer .number {
+  color: #fd297b;
+}
+
+.counters .projects .number {
+  color: #2760dc;
+}
+
+.counters .employee .number {
+  color: #58c0cf;
+}
+
+.counters .awards .number {
+  color: #a667f8;
+}
+
+.counters .counter .detail {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media (max-width: 620px) {
+  .container {
+    padding: 60px 6%;
+  }
+
+  .container .header {
+    padding: 0 0 40px 0;
+  }
+
+  .counters .counter {
+    width: 45%;
+  }
+}
+
+@media (max-width: 540px) {
+  .header .title {
+    font-size: 32px;
+  }
+  .header .sub-title {
+    font-size: 36px;
+  }
+  .counters .counter {
+    width: 80%;
+  }
+}
