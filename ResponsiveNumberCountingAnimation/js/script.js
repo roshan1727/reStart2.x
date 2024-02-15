@@ -11,7 +11,6 @@ altervalues.forEach((singlevalue) => {
     let counter = setInterval(() => {
         startValue += 1;
         singlevalue.textContent = startValue;
-
         if (startValue == endValue) {
             clearInterval(counter);
         }
